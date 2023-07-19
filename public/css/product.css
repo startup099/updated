@@ -1,0 +1,516 @@
+/* CSS for product form */
+.product-form {
+  width: 5rem;
+  max-width: 20%;
+  margin: auto;
+}
+
+/* CSS for product item */
+.product-item {
+  width: 5rem;
+  max-width: 20%;
+}
+
+/* CSS for product title */
+.product__title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* CSS for product price */
+.product__price {
+  text-align: center;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+
+/* CSS for product description */
+.product__description {
+  text-align: center;
+}
+
+/* CSS for highlight background */
+.highlight-background {
+  background-color: #eaf2f5; /* Light blue color */
+  padding: 5px;
+  margin: 4px 3in;
+}
+
+/* CSS for task list */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* CSS for task block */
+.task-block {
+  flex: 1 1 20%;
+  padding: 1px;
+  margin: 5px;
+  border-radius: 80px;
+  color: #fff;
+}
+
+/* CSS for main header */
+.main-header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* CSS for main header navigation */
+.main-header__nav {
+  display: flex;
+  justify-content: center; /* Updated to center-align the navigation items */
+  background-color: #f8f8f8; /* Updated to light grey background color */
+}
+
+/* CSS for main header item list */
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS for main header item */
+.main-header__item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* CSS for last main header item */
+.main-header__item:last-child {
+  margin-right: 0;
+}
+
+/* CSS for main header item link */
+.main-header__item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* CSS for active main header item link */
+.main-header__item a.active {
+  color: #666;
+}
+
+/* CSS for custom grid */
+.custom-grid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin-left: auto; /* Move the grid to the right */
+}
+
+/* CSS for custom card image half wrapper */
+.custom-card-img-half-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* CSS for custom card image half */
+.custom-card-img-half {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+/* CSS for container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* CSS for flex wrapper */
+.flex-wrapper {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+/* CSS for custom grid */
+.custom-grid {
+  /* Your existing styles */
+}
+
+/* CSS for custom card image half wrapper */
+.custom-card-img-half-wrapper {
+  /* Your existing styles */
+}
+
+/* CSS for unit copy wrapper */
+.unit-copy-wrapper {
+  /* Your existing styles */
+  text-align: center; /* Center the text within the unit copy wrapper */
+}
+
+/* CSS for headline */
+.headline {
+  /* Your existing styles */
+}
+
+/* CSS for grid */
+.grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0; /* Adjust if needed */
+}
+
+/* CSS for grid item container */
+.rf-ccard-content {
+  background-color: #fff;
+  border-radius: 18px;
+  width: 200px; /* Adjust the width of the grid item container */
+  height: 250px; /* Adjust the height of the grid item container */
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+/* CSS for grid item image */
+.rf-ccard-img-full {
+  width: 100%; /* Make the image width occupy the entire container width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* CSS for james class grid item content info */
+.james.rf-ccard-content-info {
+  /* Add your styles for the content info */
+}
+
+/* CSS for james class grid item */
+.james.rf-ccard-content {
+  position: relative;
+  overflow: hidden;
+}
+
+/* CSS for james class grid item image wrapper */
+.james.rf-ccard-img-full-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS for james class grid item image */
+.james.rf-ccard-img-full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS for james class grid item content info */
+.james.rf-ccard-content-info {
+  /* Add your styles for the content info */
+}
+
+/* CSS for grid container with horizontal scroll */
+.grid-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+/* CSS for grid items in inline-grid layout */
+.grid {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+/* Rest of the CSS styles remain the same */
+
+
+
+
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=San+Francisco&display=swap');
+
+body {
+  color: #000;
+  
+}
+
+.store-title {
+  font-family: 'San Francisco', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.highlight-text {
+  color: #999;
+}
+
+
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.container.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+.container.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  gap: 10px; /* Adjust the value to decrease or increase the spacing */
+}
+
+.custom-grid {
+  /* Add your styles for the custom grid */
+}
+
+.custom-card-img-half-wrapper {
+  /* Add your styles for the custom card image half wrapper */
+}
+
+.custom-card-img-half {
+  /* Add your styles for the custom card image half */
+}
+
+.unit-copy-wrapper {
+  /* Add your styles for the unit copy wrapper */
+}
+
+.headline {
+  /* Add your styles for the headline */
+}
+
+.store-title {
+  font-family: 'San Francisco', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-top: 50px;
+}
+
+.highlight-text {
+  color: #999;
+}
+
+.grid-container {
+  /* Add your styles for the grid container */
+}
+
+
+
+
+
+.grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px; /* Adjust the value to decrease or increase the gap between grid items */
+}
+
+
+
+/* CSS styles for the "scot" class */
+.scot .custom-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scot .custom-card-content {
+  /* Your styles for the custom card content */
+}
+
+.scot .rf-ccard-content-info {
+  /* Your styles for the RF ccard content info */
+}
+
+.scot .rf-ccard-content-eyebrow {
+  /* Your styles for the RF ccard content eyebrow */
+}
+
+.scot .rf-ccard-content-header {
+  /* Your styles for the RF ccard content header */
+}
+
+.scot .rf-ccard-content-headerlink {
+  /* Your styles for the RF ccard content header link */
+}
+
+.scot .rf-ccard-content-desc {
+  /* Your styles for the RF ccard content description */
+}
+
+.scot .custom-card-img-half-wrapper {
+  /* Your styles for the custom card image half wrapper */
+}
+
+.scot .custom-card-img-half {
+  /* Your styles for the custom card image half */
+}
+
+
+
+
+
+/* CSS styles for the toronto class */
+.toronto.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toronto .flex-wrapper {
+  display: flex;
+}
+
+.toronto .custom-grid {
+  /* Your styles for the custom grid */
+}
+
+.toronto .custom-card-img-half-wrapper {
+  margin-left: auto; /* Move the image to the right side */
+}
+
+.toronto .unit-copy-wrapper {
+  /* Your styles for the unit copy wrapper */
+}
+
+
+
+
+
+.align-left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* forms.css */
+/* Add your styles for forms here */
+
+/* product.css */
+/* Add your styles for product page here */
+
+/* Custom styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 25%;
+  margin: auto;
+  border-color: #468B97;
+}
+
+p3 {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Additional custom styles */
+
+/* Look Beyond the Players to the Rules of the Game */
+p {
+  margin-left: 1in;
+  margin-right: 2in;
+}
+
+/* Add any additional custom styles here */
+
+
+
+
+/* Add your custom styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}

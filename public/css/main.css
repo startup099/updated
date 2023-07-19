@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+}
+
+.main-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #13454a;
+  padding: 0 1.5rem;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+  color: #ffeb3b;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__image img {
+  width: 100%;
+}
+
+.card__actions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__actions button,
+.card__actions a {
+    margin: 0 0.25rem;
+}
+
+.btn {
+  font: inherit;
+  border: 1px solid #00695c;
+  color: #00695c;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00695c;
+  color: white;
+}
+
+.highlight-background {
+  background-color: #ffffff; /* Light blue color */
+  padding: 15px;
+  margin: 4px 3in;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.task-block {
+  flex: 1 1 5%;
+  padding: 1px;
+  margin: 70px;
+  border-radius: 1px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+}
+
+.main-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #13454a;
+  padding: 0 1.5rem;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+  color: #ffeb3b;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__image img {
+  width: 100%;
+}
+
+.card__actions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__actions button,
+.card__actions a {
+    margin: 0 0.25rem;
+}
+
+.btn {
+  font: inherit;
+  border: 1px solid #00695c;
+  color: #00695c;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00695c;
+  color: white;
+}
+
+.highlight-background {
+  background-color: #ffffff; /* Light blue color */
+  padding: 15px;
+  margin: 4px 3in;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.task-block {
+  flex: 1 1 5%;
+  padding: 1px;
+  margin: 70px;
+  border-radius: 1px;
+  color: #fff;
+}
+
+.yellow {
+  background-color: rgb(179, 179, 66);
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.highlight {
+  background-color: green;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+.grid-item {
+  /* Styles for each grid item */
+}
+
+.content {
+  text-align: center;
+  margin-top: 40px; /* Adjust margin as needed */
+}
+.rf-ccard-content-desc {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.rf-ccard-content-desc b {
+  font-weight: bold;
+  color: #f00; /* Customize the color of the price if desired */
+}
+.custom-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust the width and height as needed */
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.custom-card-img-half-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.custom-card-img-half {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+main {
+  color: #808080; /* Grey color */
+}
+
+main div {
+  font-weight: bold;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font styles */
+body {
+  font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+/* Apply styles to the grid container */
+.my-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Apply styles to the grid content */
+.my-grid .rf-ccard-content {
+  width: 400px;
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Apply styles to the image wrapper */
+.my-grid .rf-ccard-img-full-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Apply styles to the image */
+.my-grid .rf-ccard-img-full {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the content info */
+.my-grid .rf-ccard-content-info {
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the content eyebrow */
+.my-grid .rf-ccard-content-eyebrow {
+  font-size: 70px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Apply styles to the content header link */
+.my-grid .rf-ccard-content-headerlink {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Apply styles to the content description */
+.my-grid .rf-ccard-content-desc {
+  font-size: 20px;
+  color: #000000;
+}
+.hello-text {
+  font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
