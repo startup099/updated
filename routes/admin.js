@@ -1,6 +1,11 @@
 const path = require('path');
 const express = require('express');
+const multer = require('multer')
+
 const productsController = require('../controllers/products');
+
+
+
 
 const router = express.Router();
 
@@ -26,5 +31,6 @@ router.get('/task', productsController.gettask);
 
 // /admin/add-product => POST
 router.post('/add-product', productsController.postAddProduct);
+
 
 module.exports = router;

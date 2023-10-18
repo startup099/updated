@@ -1,3 +1,5 @@
+const Product = require("../models/product");
+
 const products = [];
 
 exports.getAddProduct = (req, res, next) => {
@@ -40,6 +42,53 @@ exports.getNetworth = (req, res, next) => {
   });
 };
 
+exports.deleteProduct = (req, res, next) => {
+
+  const { id } = req.params
+
+  console.log("founded", id)
+
+  Product.deleteProduct(id)
+    .then(() => {
+      res.status(200).send({ success: true })
+    })
+    .catch(err => {
+      console.log(err);
+    });
+
+  // Product.fetchAll()
+  //   .then(products => {
+  //     res.render('shop/product-list', {
+  //       prods: products,
+  //       pageTitle: 'All Products',
+  //       path: '/products'
+  //     });
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //   });
+};
+
+exports.updateStatus = (req, res, next) => {
+
+  const { id } = req.params
+
+  const { status } = req.body
+
+  console.log(id)
+  console.log(status)
+
+  Product.updateStatus(id, status)
+    .then(() => {
+      res.status(200).send({ success: true })
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  // next()
+};
+
+
 exports.getAbout = (req, res, next) => {
   res.render('about', {
     pageTitle: 'About',
@@ -71,8 +120,29 @@ exports.getBusiness = (req, res, next) => {
 };
 
 exports.postAddProduct = (req, res, next) => {
-  products.push({ title: req.body.title });
-  res.redirect('/');
+
+  const title = req.body.title;
+  const imageUrl = req.body.imageUrl;
+  const price = req.body.price;
+  const description = req.body.description;
+
+
+
+  const product = new Product(title, price, description, imageUrl);
+  product
+    .save()
+    .then(result => {
+      // console.log(result);
+      console.log('Created Product');
+      // res.send(product)
+      res.redirect('/greatone/james');
+    })
+    .catch(err => {
+      console.log(err);
+    });
+
+  // products.push({ title: req.body.title });
+  // res.redirect('/');
 };
 
 exports.getProducts = (req, res, next) => {
